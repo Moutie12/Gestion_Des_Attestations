@@ -1,0 +1,9 @@
+
+<button type="button" class="btn btn-warning" id="print" (click)="print()">print</button>
+<ng-container *ngFor="let item of this.service.tab">
+    <div id="certificate">
+        <h2 class="name">{{item.name}}</h2>
+        <h4 class="date">from : {{item.dateD}}<br>to : {{item.dateF}}</h4>
+        <img src="../../assets/images/certificate.jpg" >
+    </div>
+</ng-container>
