@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg_choix1{
+    margin-top: 0px;
+    width: 100%;
+    height: 617px;
+    background-image: url("../../assets/images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    padding-bottom: 0px;
+}
+
+.container .card {
+    position: relative;
+    width: 420px;
+    height: 540px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5), 
+                5px 5px 15px rgba(0, 0, 0, 0.05), 
+                -5px -5px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .card:hover .box {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.container .card .box .content h3 {
+    font-size: 1.1em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .card:hover .box .content h3, .container .card:hover .box .content p {
+    color: #fff;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 80px;
+    background: #03a9f4;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:hover .box .content a {
+    background: #fff;
+    color: black;
+    font-size:20px ;
+}
+
+#excel_img{
+    border-radius: 10px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+

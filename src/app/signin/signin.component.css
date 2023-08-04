@@ -1,102 +1,50 @@
-.loginBox
-{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	width:350px;
-	height:420px;
-	padding:80px 40px;
-	box-sizing: border-box;
-	background:rgba(0,0,0,0.5) ;
-	
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
 }
-
-
-
-h2
-{
-	margin:0;
-	padding:0 0 20px;
-	color:#1E90FF;
-	text-align:center;
-} 
-
-
-
-.loginBox p
-{
-	padding:0;
-	margin:0;
-	font-weight:bold;
-	color:#fff;
-	
-} 
-
-
-.loginBox input
-{
-	width:100%;
-	margin-bottom: 20px; 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+.wrong{
+    font-family: 'Poppins', sans-serif;
+    width: 360px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+    transition: 0.5s;
+    transform: translate(100%,-400%) scale(1);
+    display: none;
 }
-
-.loginBox input[type="text"], .loginBox input[type="password"]
-{
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline:none;
-	height:40px;
-	color:#fff;
-	font-size: 16px;
-	
-	
+.wrong1{
+    font-family: 'Poppins', sans-serif;
+    width: 360px;
+    padding-top: 20px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+    transition: 0.5s;
+    transform: translate(30%,-400%) scale(1);
 }
-
-
-.loginBox input[type="submit"]
-{
-	border:none;
-	outline:none;
-	height: 40px;
-	color:#fff;
-	font-size:16px;
-	background: rgb(255,38,126);
-	cursor:pointer;
-	border-radius:20px;
+.wrong h3{
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
 }
-
-
-.loginBox input[type="submit"]:hover
-{
-	background: #efed40;
-	color: #262626;
-}
- 
- 
- 
-
-.loginBox a
-{
-	color: #fff;
-	font-size:14px;
-	font-weight:bold;
-} 
-
-
-::placeholder
-{
-	color:rgba(255,255,255,0.5); 
-}
-
-
-.user
-{
-	width:100px;
-	height:100px; 
-	overflow:hidden;
-	position:absolute;
-	top:calc(-100px/2);
-	left:calc(50% - 50px);
-	border-radius:50%;
+#cancel{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: red;
+    cursor: pointer;
 }

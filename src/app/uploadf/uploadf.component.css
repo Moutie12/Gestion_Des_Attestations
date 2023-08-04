@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#select{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+    color: black;
+}
+
+#read{
+    padding: 12px 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.upload_hide {
+    position: absolute;
+    max-width: 840px;
+    max-height: 540px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    opacity: 0;
+}
+
+.upload_label {
+    position: absolute;
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    margin: 20px !important;
+    border: 2px dashed #139CFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.choose_file {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #139CFF;
+    color: #fff;
+    border-radius: 3px;
+    margin: 30px auto;
+    pointer-events: none;
+}
+
+.delete_file {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #139CFF;
+    color: #fff;
+    border-radius: 3px;
+    margin: 30px auto;
+    cursor: pointer;
+    z-index: 6;
+    position: absolute;
+    top: 62%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+
+.upload_label > i {
+    color: #FF1384;
+    font-size: 110px;
+    margin: 30px 0;
+}
+
+.drag_text {
+    color: #139CFF;
+    font-size: 22px;
+    margin: 30px 0 0 0;
+}
+
+
+.image > img {
+    padding: 40px;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 0;
+}

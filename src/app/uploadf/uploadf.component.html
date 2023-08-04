@@ -1,0 +1,26 @@
+<div class="container">
+    <input type="file" (change)="onFileChange($event)" class="upload_hide" id="upload_costum" >
+    <label for="upload_costum" class="upload_label">
+      <div class="image">
+        <img src="" alt="">
+      </div>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p class="drag_text">Drag & Drop to Upload File</p>
+      <button class="choose_file">Choose a File</button>
+    </label>
+  </div>
+  
+  <!-- Display a dropdown to show the available sheet names -->
+  <div class="container">
+    <label for="sheetDropdown" id="select">Select a sheet:</label>
+    <select class="form-control choices-single" id="sheetDropdown" [(ngModel)]="desiredSheetName" (change)="onSheetChange($event)">
+        <option unselected></option>
+        <option *ngFor="let sheet of availableSheets" [value]="sheet">{{ sheet }}</option>
+      </select>
+    <button type="button" class="btn btn-warning" (click)="onReadExcel()" id="read">Read Sheet</button>
+  </div>
+  
+  <script>
+    new Choices(document.querySelector(".choices-single"));
+  </script>
+  

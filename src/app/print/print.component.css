@@ -1,12 +1,99 @@
 .name{
     position: absolute;
-    margin-top: 250px;
-    margin-left: 350px;
+    margin-top: 290px;
+    margin-left: 450px;
+}
+.move{
+    display: none;
+}
+.certif_theme{
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 470px;
+}
+.name_attestation1{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 445px;
+    font-size: 40px;
+}
+.name_attestation2{
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 650px;
+}
+.name_attestation3{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 420px;
+    font-size: 36px;
 }
 .date{
     position: absolute;
+    margin-top: 400px;
+    margin-left: 356px;
+}
+.date_attestation1{
+    position: absolute;
+    margin-top: 655px;
+    margin-left: 720px;
+}
+.date1_attestation2{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 550px;
+}
+.date1_attestation3{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 300px;
+}
+.date2_attestation2{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 750px;
+}
+.date2_attestation3{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 750px;
+}
+.title{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+.name_certif4{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 350px;
+}
+.title_attestation1{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 350px;
+    font-size: 55px;
+}
+.title_attestation2{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 700px;
+}
+.title_attestation3{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 260px;
+    margin-left: 250px;
+}
+.date_certif4{
+    position: absolute;
     margin-top: 360px;
     margin-left: 240px;
+}
+.title_certif4{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 350px;
 }
 #print{
     width: 200px;
@@ -15,6 +102,92 @@
     border-radius: 15px;
     position: absolute;
     margin-top: 200px;
-    margin-left: 1050px;
+    margin-left: 1100px;
     position: fixed;
 }
+#print_certif{
+    width: 1100px;
+    height: 720px;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+/*--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+.loader{
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #16191e;
+    position: absolute;
+}
+.loader h3{
+    color: white;
+    margin-top: 28.5%;
+    margin-left: 40.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.loader>div{
+    height: 70px;
+    width: 70px;
+    border: 15px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*-------------------------------------------------------------*/
+.box-3{
+    background-color: #66A182;
+    padding: 10px 28px;
+}
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    padding: 14px 28px;
+    margin-left: 90%;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }

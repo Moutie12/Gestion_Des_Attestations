@@ -1,3 +1,8 @@
+<div class="loader" *ngIf="load == true">
+    <div></div>
+    <h3>Loading ...</h3>
+</div>
+<ng-container *ngIf="load == false">
 <div class="generator1">
     <p class="num_eleve">{{this.number1}}</p>
     <img src="../../assets/images/certificat_logo.png" height="150px" width="350px">
@@ -6,10 +11,10 @@
     <input type="text" placeholder="Name" id="element" class="inputs" [(ngModel)]="user.name">
     <span id="element">date de début : </span><input type="date" class="inputs" [(ngModel)]="user.dateD">
     <span id="element">date de fin : </span><input type="date" class="inputs" [(ngModel)]="user.dateF">
-    <select style="margin-top: 20px;" class="inputs">
-        <option >thème</option>
-        <option >administration des réseaux</option>
-        <option >développement</option>
+    <select [(ngModel)]="user.theme" style="margin-top: 20px;" class="inputs" >
+        <option value="">thème</option>
+        <option value="administration des réseaux">administration des réseaux</option>
+        <option value="développement">développement</option>
     </select>
     <div class="buttons">
     <button type="button" [ngClass]="{'dis': this.number1==1}" class="btn btn-warning" style="width:50%;" (click)="back()">Back</button>
@@ -23,3 +28,4 @@
     <h4>You have successfully completed all the requirements </h4>
     <button type="button" id="print" class="btn btn-primary" [routerLink]="['/print']">Print certifications</button>
 </div>
+</ng-container>

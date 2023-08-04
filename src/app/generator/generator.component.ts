@@ -7,7 +7,9 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./generator.component.css']
 })
 export class GeneratorComponent {
-  constructor(private service : ServiceService){}
+  constructor(public service : ServiceService){}
+
+  load = true ;
 
   cond  = false ;
   cond2 = false ;
@@ -21,7 +23,7 @@ export class GeneratorComponent {
     name : '',
     dateD : '',
     dateF : '',
-    thème : ''
+    theme : ''
   } 
 
 
@@ -34,7 +36,7 @@ export class GeneratorComponent {
   }
 
   add() {
-    if (this.number1 <=1)
+    if (this.number1 <= (this.service.nombreEtudiants-1))
     {
       this.number1++;
     this.service.tab.push(this.user);
@@ -44,7 +46,7 @@ export class GeneratorComponent {
       name : '',
       dateD : '',
       dateF : '',
-      thème : ''
+      theme : ''
     }
   }else{
     this.service.tab.push(this.user);
@@ -60,9 +62,17 @@ export class GeneratorComponent {
       name : '',
       dateD : '',
       dateF : '',
-      thème : ''
+      theme : ''
     }
     console.log(this.service.tab);
+  }
+
+  change = () => {
+    this.load = false ;
+  }
+
+  ngOnInit() {
+    const timeout = setTimeout(this.change,2000);
   }
 
   

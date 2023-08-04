@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .generator1{
-    margin-left: 30%;
-    margin-top: 50px;
+    margin-left: 35%;
+    margin-top: 30px;
     width: 450px;
     height: 570px;
     border: 1px solid black;
@@ -69,7 +69,7 @@
     transform: translate(0%,-150%) scale(0.3);
 }
 .pop1{
-    transform: translate(-16%,+12%) scale(1);
+    transform: translate(0%,0%) scale(1);
 }
 .pop2{
     transform: translate(0%,-150%) scale(0.3);
@@ -88,4 +88,40 @@
     margin-top: 30px;
     color: white;
     font-weight: bold;
+}
+/*--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+.loader{
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #16191e;
+    position: absolute;
+}
+.loader h3{
+    color: white;
+    margin-top: 28.5%;
+    margin-left: 45.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.loader>div{
+    height: 70px;
+    width: 70px;
+    border: 15px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
 }

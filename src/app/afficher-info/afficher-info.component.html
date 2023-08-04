@@ -1,0 +1,25 @@
+<div class="buttons">
+  <button type="button" class="btn btn-primary" id="enregistrer_modifications" routerLink="/print">Print</button>
+</div>
+<table class="table table-striped" id="table_info">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Date Début</th>
+        <th scope="col">Date Fin</th>
+        <th scope="col">Thème</th>
+        <th scope="col">Vérification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of this.service.tab; let i = index">
+        <tr [hidden]="isHidden(i)">
+            <th scope="row"><input type="text" [(ngModel)]="item.name" id="value_displayed"></th>
+            <td><input type="text" [(ngModel)]="item.dateD" id="value_displayed"></td>
+            <td><input type="text" [(ngModel)]="item.dateF" id="value_displayed"></td>
+            <td><input type="text" [(ngModel)]="item.theme" id="value_displayed"></td>
+            <td><img [src]="verifierDonnees(item.name,item.dateD,item.dateF,item.theme)" height="50px" width="50px"></td>
+          </tr>
+      </ng-container>
+    </tbody>
+  </table>

@@ -1,9 +1,38 @@
 
-<button type="button" class="btn btn-warning" id="print" (click)="print()">print</button>
-<ng-container *ngFor="let item of this.service.tab">
-    <div id="certificate">
-        <h2 class="name">{{item.name}}</h2>
-        <h4 class="date">from : {{item.dateD}}<br>to : {{item.dateF}}</h4>
-        <img src="../../assets/images/certificate.jpg" >
+<div class="loader" *ngIf="load == true">
+    <div></div>
+    <h3>preparing certificates ...</h3>
+</div>
+<ng-container *ngIf="load == false">
+<div class="box-3" >
+    <div class="btn btn-three" (click)="print()" *ngIf="load == false">
+      <span >Print Now</span>
     </div>
+  </div>
+<ng-container *ngFor="let item of this.service.tab" >
+    <div id="certificate"  *ngIf="certif == true">
+        <h1 class="certif_theme">{{item.theme}}</h1>
+        <h2 class="name">{{item.name}}</h2>
+        <h4 class="date">{{item.dateD}}<br>{{item.dateF}}</h4>
+        <img src="../../assets/images/certificate.jpg" id="print_certif">
+      </div>
+    <div id="certificate" *ngIf=" attestation1 == true">
+        <h1 class="title_attestation1" >{{item.theme}}</h1>
+        <h2 class="name_attestation1" >{{item.name}}</h2>
+        <h4 class="date_attestation1" >{{item.dateD}}<br>{{item.dateF}}</h4>
+        <img src= "../../assets/images/attestation1.png" id="print_certif">
+    </div>
+    <div id="certificate" *ngIf=" attestation2 == true">
+        <h1 class="title_attestation2" >{{item.theme}}</h1>
+        <h2 class="name_attestation2" >{{item.name}}</h2>
+        <h4 class="date1_attestation2" >{{item.dateD}} <br>{{item.dateF}}</h4>
+        <img src= "../../assets/images/attestation2.jpg" id="print_certif">
+    </div>
+    <div id="certificate" *ngIf=" attestation3 == true">
+        <h1 class="title_attestation3" >{{item.theme}}</h1>
+        <h2 class="name_attestation3" >{{item.name}}</h2>
+        <h4 class="date1_attestation3" >{{item.dateD}} <br>{{item.dateF}}</h4>
+        <img src= "../../assets/images/attestation3.jpg" id="print_certif">
+    </div>
+</ng-container>
 </ng-container>

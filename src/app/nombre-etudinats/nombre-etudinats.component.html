@@ -1,0 +1,11 @@
+<div class="back_nb">
+    <div class="cni_img_valid">
+        <img src="../../assets/images/cni.png" height="100px" width="150px">
+        <button id="valider" (click)="pass_to_generator()">valider</button>
+    </div>
+    <div class="body_nb">
+        <h3>Nombre Etudiants : </h3>
+        <input type="number"  id="number" [(ngModel)]="this.service.nombreEtudiants">
+    </div>
+    <div class="reste_p"></div>
+</div>

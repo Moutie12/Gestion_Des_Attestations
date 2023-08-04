@@ -1,0 +1,20 @@
+#table_info{
+    width: 85%;
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+#value_displayed{
+    border: none;
+}
+.buttons{
+    position: absolute;
+    left: 90%;
+    top: 3%;
+}
+#enregistrer_modifications{
+    height: 40px;
+    width: 100px;
+    margin-right: 2px;
+}
