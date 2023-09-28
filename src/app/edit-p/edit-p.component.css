@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap');
+.form{
+    width: 500px;
+    align-items: center;
+    margin-left: 45%;
+    margin-top: 10%;
+    padding: 15px;
+    border: 2px solid #E5DDDC;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#form_gp{
+    margin-bottom: 30px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}

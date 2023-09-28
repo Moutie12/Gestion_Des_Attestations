@@ -1,0 +1,30 @@
+<div class="table1">
+  <table class="table">
+    <thead style="background-color: #E5DDDC;">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Select</th>
+        <th scope="col">Save Changes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of this.service.AllData">
+        <th scope="row">{{item._id}}</th>
+        <td><img [src]=item.url  width="120px" height="70px"></td>
+        <td>{{item.name}}</td>
+        <td>
+          <label class="toggle">
+            <input type="checkbox" id="toggle-checkbox" checked  *ngIf="item.state">
+            <input type="checkbox" id="toggle-checkbox" unchecked  *ngIf="item.state == false">
+            <span class="slider"></span>
+          </label>
+        </td>
+        <td>
+          <button type="button" class="save" (click)="save(item._id,item.state)">Save changes</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

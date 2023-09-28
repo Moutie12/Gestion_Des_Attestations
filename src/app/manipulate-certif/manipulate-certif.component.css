@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: black;
+    background-color: #9FA6B2;
+}
+#cni_logo{
+    margin-top: 15px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+#search{
+    margin-left: 20%;
+    height: 40px;
+    border-radius: 5px;
+    width: 283px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    margin-top: 5px;
+}
+#menu{
+    margin-left: 30%;
+    height: 40px;
+    cursor: pointer;
+    padding-top: 10px;
+    color: black;
+}
+#profil{
+    width: 250px;
+    height: 556px;
+    background-color: #E5DDDC;
+}
+#profil_logo{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+#photoetnom{
+    color: black;
+    display: flex;
+}
+#photoetnom h4{
+    padding-top: 30px;
+    margin-left: 20px;
+}
+.sign_out{
+    
+    width: 90px;
+    height: 30px;
+    background-color: #F9382B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+.sign_out:hover{
+    background-color: #e23427;
+}
+.btn_profil{
+    width: 90%;
+    height: 36px;
+    background-color: #3EABF7;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn_profil:hover{
+    background-color: #249bf0;
+    color: white;
+}
+.body{
+    display: flex;
+}
+.table1{
+    width: 1000px;
+}
+.table{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+/****************************************/
+/* styles.css */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.save{
+    padding: 8px 14px;
+    border: none;
+    background-color:#E5DDDC ;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.save:hover{
+    background-color: #249bf0;
+}

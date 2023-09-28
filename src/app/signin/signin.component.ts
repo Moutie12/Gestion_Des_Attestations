@@ -18,17 +18,33 @@ export class SigninComponent {
   }
 
 
-  admin = {
+  user = {
     email :'',
     password :''
   }
   show() {
-    if(this.admin.email == this.service.email && this.admin.password == this.service.password)
+    if(this.user.email == this.service.email && this.user.password == this.service.password)
     {
       this.router.navigate(['/choixmodel1']);
     }else{
       this.cond_wrong = false ;
     } 
+  }
+
+  getlogin() {
+    this.service.VerifierUser(this.user).subscribe(
+      res=>{
+        console.log(res);
+        if (res){
+          this.router.navigate(['/choixmodel1']);
+        }else{
+          this.cond_wrong = false ;
+        }   
+      },
+      err=>{
+        console.log(err);
+      }
+    );
   }
 
 

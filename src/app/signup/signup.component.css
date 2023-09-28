@@ -1,0 +1,50 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+.wrong{
+    font-family: 'Poppins', sans-serif;
+    width: 360px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+    transition: 0.5s;
+    transform: translate(100%,-400%) scale(1);
+    display: none;
+}
+.wrong1{
+    font-family: 'Poppins', sans-serif;
+    width: 360px;
+    padding-top: 20px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+    transition: 0.5s;
+    transform: translate(30%,-400%) scale(1);
+}
+.wrong h3{
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#cancel{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: red;
+    cursor: pointer;
+}
